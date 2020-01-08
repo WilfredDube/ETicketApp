@@ -1,6 +1,6 @@
 # ETicketApp
 
-ETicketApp is a practice train booking app that I developed, it is incomplete (no backed-end). Hope to refine it some time soon.
+ETicketApp is a practice train booking app that I developed, it is incomplete (no backed-end). Hope to improve it some time soon.
 </br>
 
 ## Screenshots
