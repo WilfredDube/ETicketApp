@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appColor"
+            android:paddingTop="10dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/topPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                app:navigationIcon="@drawable/back"
+                app:subtitleTextColor="@color/colorWhite"
+                app:title="Select stations"
+                app:titleTextColor="@color/colorWhite">
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/stations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBarLayout">
+
+        <include layout="@layout/train_details"></include>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/stationRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stations"
+        android:layout_above="@id/tripTotalCost">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/stationList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tripTotalCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bookingDoneBtn"
+        android:layout_alignParentStart="true"
+        android:background="@color/appColor">
+
+        <TextView
+            android:id="@+id/textTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="TOTAL"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/textCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="$26.00"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bookingDoneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#27C79A"
+        android:text="DONE"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite" />
+
+
+
+</RelativeLayout>

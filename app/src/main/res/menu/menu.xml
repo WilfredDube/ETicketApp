@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuBook"
+        android:title="Book train" />
+        android:title="Book train" />
+    <item
+        android:id="@+id/menuTickets"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="My tickets" />
+    <item
+        android:id="@+id/menuTrainInfor"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/menuSettings"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Settings" />
+    <item
+        android:id="@+id/menuLogout"
+        android:title="Logout" />
+</menu>

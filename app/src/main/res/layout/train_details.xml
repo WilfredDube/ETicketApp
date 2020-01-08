@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appColor"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Select the boarding location and the drop point at your destination."
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appColor"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp"
+            android:paddingBottom="20dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/boardingPointRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Boarding Station"
+                    android:textColor="@color/colorWhite" />
+
+                <RadioButton
+                    android:id="@+id/dropOffPointRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorWhite"
+                    android:text="Drop-off Station"
+                    android:textColor="@color/colorWhite" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+</merge>
