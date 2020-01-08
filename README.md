@@ -1,4 +1,4 @@
 # ETicketApp
 Train Booking App
 
-<img src="https://user-images.githubusercontent.com/22616354/71957565-bd8be800-31f6-11ea-8632-02b25128f866.png">
+<img src="https://user-images.githubusercontent.com/22616354/71957565-bd8be800-31f6-11ea-8632-02b25128f866.png" width="300" height="500">
